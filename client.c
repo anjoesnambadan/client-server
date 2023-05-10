@@ -16,10 +16,6 @@ void errors(int eno, int sockfd)
 				 break;
 		case 3 : printf("\nWrong Credentials!\n");
 				 break;
-		case 4 : printf("\nError while establishing connection!\n");
-				 break;
-		case 5 : printf("\nWrong Credentials!\n");
-				 break;
 	}
 	printf("Exiting...\n");
 	close(sockfd);
