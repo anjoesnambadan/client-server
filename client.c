@@ -59,7 +59,7 @@ void main()
 			write(client_sockfd, username, sizeof(username));
 			write(client_sockfd, password, sizeof(password));
 			read(client_sockfd, &status, sizeof(status));
-			if (strcmp(status, "1") == 0)
+			if (status[0] == 1)
 			{
 				errors(3, client_sockfd);
 			}
